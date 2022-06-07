@@ -23,24 +23,13 @@ const About = () => {
     });
   });
 
-  var directions = new MapboxDirections({
-    accessToken:
-      "pk.eyJ1IjoibWFwYm94MTIzNDU2NzgiLCJhIjoiY2wzeWkwaHhvMGczcTNjbGRtanl0dHZxcCJ9.F-XAkRsj6nQRwPk08vbw_w",
-    unit: "metric",
-    profile: "mapbox/cycling",
-  });
-  map.addControl(directions, "top-left");
-  map.addControl(
-    new mapboxgl.GeolocateControl({
-      positionOptions: {
-        enableHighAccuracy: true,
-      },
-      // When active the map will receive updates to the device's location as it changes.
-      trackUserLocation: true,
-      // Draw an arrow next to the location dot to indicate which direction the device is heading.
-      showUserHeading: true,
-    })
-  );
+  // var directions = new MapboxDirections({
+  //   accessToken:
+  //     "pk.eyJ1IjoibWFwYm94MTIzNDU2NzgiLCJhIjoiY2wzeWkwaHhvMGczcTNjbGRtanl0dHZxcCJ9.F-XAkRsj6nQRwPk08vbw_w",
+  //   unit: "metric",
+  //   profile: "mapbox/cycling",
+  // });
+  // map.addControl(directions, "top-left");
   // map.addControl(
   //   new MapboxDirections({
   //     accessToken: mapboxgl.accessToken,
