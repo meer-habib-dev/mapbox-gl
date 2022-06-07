@@ -99,13 +99,13 @@ export default function Home() {
         mapStyle="mapbox://styles/mapbox/streets-v9"
         // onClick={(e) => doSomeThing(e)}
       >
-        <Layer
+        {/* <Layer
           type="line"
           layout={{ "line-cap": "round", "line-join": "round" }}
           paint={{ "line-color": "#4790E5", "line-width": 12 }}
         >
           <Feature coordinates={[-0.13235092163085938, 51.518250335096376]} />
-        </Layer>
+        </Layer> */}
         {/* <Source id="my-data" type="geojson" data={geojson}>
           <Layer {...layerStyle} />
         </Source> */}
