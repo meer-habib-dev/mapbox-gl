@@ -1,8 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import Script from "next/script";
 // import MapboxDirections from "@mapbox/mapbox-gl-directions";
-import MapboxDirections from "@mapbox/mapbox-gl-directions";
+// import MapboxDirections from "@mapbox/mapbox-gl-directions";
 mapboxgl.accessToken =
   "pk.eyJ1IjoibWFwYm94MTIzNDU2NzgiLCJhIjoiY2wzeWkwaHhvMGczcTNjbGRtanl0dHZxcCJ9.F-XAkRsj6nQRwPk08vbw_w";
 
@@ -48,7 +49,9 @@ const About = () => {
   // );
   return (
     <div className="h-screen max-w-5xl mx-auto flex items-center justify-center">
-      <div ref={mapContainer} className="h-96 w-screen" />
+      <Script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></Script>
+      <Script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js" />
+      <div id="map" ref={mapContainer} className="h-96 w-screen" />
     </div>
   );
 };
